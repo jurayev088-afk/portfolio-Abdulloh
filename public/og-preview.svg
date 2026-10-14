@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080a10"/>
+      <stop offset="1" stop-color="#111522"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9270ff"/>
+      <stop offset="0.65" stop-color="#7254e8"/>
+      <stop offset="1" stop-color="#6fe4dc"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7254e8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#7254e8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1000" cy="310" r="390" fill="url(#glow)"/>
+  <rect x="54" y="54" width="1092" height="522" rx="26" fill="none" stroke="#222638" stroke-width="2"/>
+  <circle cx="96" cy="116" r="6" fill="#81e6b0"/>
+  <text x="118" y="122" fill="#9298ae" font-family="Arial, sans-serif" font-size="17" letter-spacing="3">JUNIOR FRONTEND DEVELOPER</text>
+  <text x="92" y="268" fill="#f4f5fc" font-family="Arial, sans-serif" font-size="76" font-weight="700">Abdulloh</text>
+  <text x="92" y="356" fill="url(#accent)" font-family="Arial, sans-serif" font-size="76" font-weight="700">Jo'rayev.</text>
+  <text x="96" y="414" fill="#f4f5fc" font-family="Arial, sans-serif" font-size="25" font-weight="600">Frontend Developer</text>
+  <text x="96" y="462" fill="#9298ae" font-family="Arial, sans-serif" font-size="19">React · TypeScript · Next.js · Tailwind CSS</text>
+  <rect x="690" y="158" width="390" height="286" rx="18" fill="#0e111b" stroke="#222638" stroke-width="2"/>
+  <path d="M690 202h390" stroke="#222638" stroke-width="2"/>
+  <circle cx="718" cy="180" r="6" fill="#9270ff"/>
+  <circle cx="739" cy="180" r="6" fill="#6fe4dc"/>
+  <circle cx="760" cy="180" r="6" fill="#81e6b0"/>
+  <text x="974" y="185" fill="#9298ae" font-family="monospace" font-size="12">portfolio.tsx</text>
+  <text x="728" y="246" fill="#9298ae" font-family="monospace" font-size="16">01</text>
+  <text x="770" y="246" fill="#9270ff" font-family="monospace" font-size="16">const</text>
+  <text x="826" y="246" fill="#f4f5fc" font-family="monospace" font-size="16">developer = {</text>
+  <text x="728" y="286" fill="#9298ae" font-family="monospace" font-size="16">02</text>
+  <text x="770" y="286" fill="#9298ae" font-family="monospace" font-size="16">name:</text>
+  <text x="840" y="286" fill="#6fe4dc" font-family="monospace" font-size="16">"Abdulloh"</text>
+  <text x="728" y="326" fill="#9298ae" font-family="monospace" font-size="16">03</text>
+  <text x="770" y="326" fill="#9298ae" font-family="monospace" font-size="16">role:</text>
+  <text x="840" y="326" fill="#6fe4dc" font-family="monospace" font-size="16">"Frontend Dev"</text>
+  <text x="728" y="366" fill="#9298ae" font-family="monospace" font-size="16">04</text>
+  <text x="770" y="366" fill="#9298ae" font-family="monospace" font-size="16">skills: [</text>
+  <text x="770" y="406" fill="#81e6b0" font-family="monospace" font-size="16">"React", "Next.js"</text>
+  <text x="770" y="430" fill="#f4f5fc" font-family="monospace" font-size="16">]}</text>
+  <text x="96" y="530" fill="#9298ae" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">ABDULLOH.DEV</text>
+  <path d="M248 524h42" stroke="#9270ff" stroke-width="2"/>
+  <text x="310" y="530" fill="#9298ae" font-family="Arial, sans-serif" font-size="15">PORTFOLIO</text>
+</svg>

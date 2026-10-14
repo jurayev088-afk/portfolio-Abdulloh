@@ -12,12 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-abdulloh-ivory.vercel.app/"),
+  metadataBase: new URL(
+    "https://portfolio-abdulloh-ivory.vercel.app"
+  ),
 
   title: "Abdulloh.dev",
-
-  description: "portfolio abdulloh jorayev",
+  description: "Portfolio Abdulloh Jo'rayev",
 
   icons: {
     icon: "/icon.svg",
@@ -27,13 +29,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Abdulloh.dev",
     title: "Portfolio - Abdulloh Jo'rayev",
-    description: "portfolio, frontend, react, next",
+    description: "Frontend Developer | React | Next.js",
     url: "https://portfolio-abdulloh-ivory.vercel.app/",
     images: [
       {
-        url: "https://portfolio-abdulloh-ivory.vercel.app/og-image.png",
-        width: 1012,
-        height: 1024,
+        url: "https://portfolio-abdulloh-ivory.vercel.app/og-image.png?v=3",
+        width: 1200,
+        height: 630,
         alt: "Abdulloh Jo'rayev Portfolio",
       },
     ],
@@ -43,8 +45,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Portfolio - Abdulloh Jo'rayev",
-    description: "portfolio, frontend, react, next",
-    images: ["/og-image.png"],
+    description: "Frontend Developer | React | Next.js",
+    images: [
+      "https://portfolio-abdulloh-ivory.vercel.app/og-image.png?v=3",
+    ],
   },
 };
 
