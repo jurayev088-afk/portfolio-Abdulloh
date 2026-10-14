@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://portfolio-abdulloh-ivory.vercel.app/",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://portfolio-abdulloh-ivory.vercel.app/og-image.png",
         width: 1012,
         height: 1024,
         alt: "Abdulloh Jo'rayev Portfolio",
