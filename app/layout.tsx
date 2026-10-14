@@ -19,6 +19,10 @@ export const metadata: Metadata = {
 
   description: "portfolio abdulloh jorayev",
 
+  icons: {
+    icon: "/icon.svg",
+  },
+
   openGraph: {
     type: "website",
     siteName: "Abdulloh.dev",
@@ -28,12 +32,19 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        width: 1012,
+        height: 1024,
         alt: "Abdulloh Jo'rayev Portfolio",
       },
     ],
     locale: "uz_UZ",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio - Abdulloh Jo'rayev",
+    description: "portfolio, frontend, react, next",
+    images: ["/og-image.png"],
   },
 };
 
