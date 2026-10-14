@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #080a10;
+  --panel: #0e111b;
+  --panel2: #111522;
+  --border: #222638;
+  --text: #f4f5fc;
+  --muted: #9298ae;
+  --purple: #9270ff;
+  --purple2: #7254e8;
+  --cyan: #6fe4dc;
+  --green: #81e6b0;
+  --background: var(--bg);
+  --foreground: var(--text);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--bg);
+    --foreground: var(--text);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#home {
+  background:
+    radial-gradient(ellipse at 78% 38%, rgb(114 84 232 / 12%), transparent 34%),
+    linear-gradient(118deg, var(--bg) 0%, #0c0e17 55%, #0a0c14 100%);
+}
+
+#about,
+#contact {
+  background-color: var(--panel);
+}
+
+#skills,
+#projects {
+  background-color: var(--bg);
+}
+
+#home h1 span,
+#about h2 span,
+#skills h2 span,
+#contact h2 span {
+  background-image: linear-gradient(110deg, var(--purple) 0%, var(--purple2) 62%, var(--cyan) 100%);
+}
+
+#home a[href="#projects"],
+#contact > div > div:first-child > a[href^="https://t.me/"] {
+  background-color: var(--purple);
+  color: var(--text);
+}
+
+#home a[href="#projects"]:hover,
+#contact > div > div:first-child > a[href^="https://t.me/"]:hover {
+  background-color: var(--purple2);
+}
+
+nav {
+  background-color: rgb(14 17 27 / 94%);
+  border-color: var(--border);
+}
+
+nav a[href^="https://t.me/"] {
+  background-color: var(--purple);
+  border-color: var(--purple);
+  color: var(--text);
+}
+
+nav a[href^="https://t.me/"]:hover {
+  background-color: var(--purple2);
+  border-color: var(--purple2);
+}
+
+#home a[href^="https://t.me/"]:hover {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+#skills article,
+#projects article,
+#about .space-y-3 > div:not(:last-child),
+#contact .space-y-3 > * {
+  background-color: var(--panel2);
+  border-color: var(--border);
+}
+
+#skills article:hover,
+#projects article:hover,
+#contact .space-y-3 > a:hover {
+  border-color: rgb(146 112 255 / 35%);
+}
+
+#skills article li {
+  background-color: var(--panel);
+}
+
+#home .skills-marquee {
+  background-color: var(--panel);
+  border-color: var(--border);
+}
+
+#home .skills-track li > span {
+  background-color: var(--purple);
+}
+
+[class~="text-[#9bb8ce]"],
+[class~="text-[#a9c2d5]"],
+[class~="text-[#b6c9d8]"],
+[class~="text-sky-300"],
+[class~="text-sky-200"] {
+  color: var(--purple);
+}
+
+[class~="bg-[#9bb8ce]"],
+[class~="bg-sky-300"] {
+  background-color: var(--purple);
+}
+
+[class~="hover:bg-[#b2c7d8]"]:hover,
+[class~="hover:bg-sky-200"]:hover {
+  background-color: var(--purple2);
+}
+
+[class~="border-[#9bb8ce]/20"],
+[class~="border-[#9bb8ce]/25"],
+[class~="border-sky-300/15"] {
+  border-color: rgb(146 112 255 / 32%);
+}
+
+#home [class~="text-blue-300"] {
+  color: var(--purple);
+}
+
+#home [class~="text-emerald-200"] {
+  color: var(--cyan);
+}
+
+#home [class~="text-amber-200"] {
+  color: var(--green);
+}
+
+#projects article .text-emerald-300 {
+  color: var(--green);
+}
+
+#contact .bg-emerald-300 {
+  background-color: var(--green);
+}
+
+#projects article [class~="bg-sky-400"] {
+  background-color: var(--purple);
+}
+
+@keyframes skills-enter {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skills-enter {
+  animation: skills-enter 200ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-enter {
+    animation: none;
+  }
+}
+
+@keyframes skills-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-track {
+  animation: skills-marquee 40s linear infinite;
+}
