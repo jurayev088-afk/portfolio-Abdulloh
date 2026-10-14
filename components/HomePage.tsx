@@ -30,7 +30,7 @@ export default function HomePage() {
             <span className="size-2 rounded-full bg-[#9bb8ce]" />
             JUNIOR FRONTEND DEVELOPER
           </p>
-          <h1 className="mt-2 text-5xl font-bold leading-[0.98] sm:text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="mt-8 text-5xl font-bold leading-[0.98] sm:text-6xl lg:text-7xl xl:text-8xl">
             Abdulloh
             <span className="block bg-linear-to-r from-[#b6c9d8] via-[#9fb8cc] to-[#8eaac1] bg-clip-text pb-2 text-transparent">
               Jo&apos;rayev.
