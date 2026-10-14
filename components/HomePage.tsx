@@ -23,9 +23,9 @@ const technologies = [
 export default function HomePage() {
   return (
     <section id="home" className="overflow-hidden bg-[#151e27] text-[#e2e8ed]">
-      <div className="mx-auto grid min-h-[calc(100svh-7.5rem)] max-w-6xl items-center gap-8 px-5 pt-0 sm:px-8 md:grid-cols-2 lg:gap-16 lg:py-20">
+      <div className="mx-auto grid min-h-[calc(100svh-7.5rem)] max-w-6xl items-center gap-8 px-5 py-10 sm:px-8 sm:py-12 min-[900px]:grid-cols-2 lg:gap-16 lg:py-20">
         <div className="relative z-10">
-          <p className="flex items-center gap-3 text-xs font-medium tracking-[0.18em] text-[#b4c3cf]">
+          <p className="flex items-center gap-3 text-xs mt-10 font-medium tracking-[0.18em] text-[#b4c3cf]">
             <span className="size-2 rounded-full bg-[#9bb8ce]" />
             JUNIOR FRONTEND DEVELOPER
           </p>
@@ -98,7 +98,7 @@ export default function HomePage() {
           <div className="absolute h-64 w-64 rounded-full border border-[#9bb8ce]/[0.08] sm:h-80 sm:w-80" />
           <div className="absolute h-52 w-52 rounded-full border border-[#9bb8ce]/[0.06] sm:h-64 sm:w-64" />
 
-          <div className="relative w-[min(100%,360px)] rotate-[-3deg] rounded-xl border border-white/[0.09] bg-[#111922]/95 shadow-[0_24px_90px_rgba(3,12,24,0.28)]">
+          <div className="relative w-[min(100%,360px)] rounded-xl border border-white/[0.09] bg-[#111922]/95 shadow-[0_24px_90px_rgba(3,12,24,0.28)] sm:rotate-[-3deg]">
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
               <div className="flex gap-1.5" aria-hidden="true">
                 <span className="size-2 rounded-full bg-rose-400" />
@@ -156,13 +156,13 @@ export default function HomePage() {
               </p>
             </div>
           </div>
-          <span className="absolute left-0 top-[18%] rounded-lg border border-white/[0.09] bg-[#1b2732] px-4 py-3 text-xs text-slate-300 shadow-xl sm:left-2">
+          <span className="absolute left-0 top-[18%] hidden rounded-lg border border-white/[0.09] bg-[#1b2732] px-4 py-3 text-xs text-slate-300 shadow-xl min-[430px]:block sm:left-2">
             <span className="mr-2 text-[#a9c2d5]">●</span>React.js
           </span>
-          <span className="absolute bottom-[18%] right-0 rounded-lg border border-white/[0.09] bg-[#1b2732] px-4 py-3 text-xs text-slate-300 shadow-xl sm:right-2">
+          <span className="absolute bottom-[18%] right-0 hidden rounded-lg border border-white/[0.09] bg-[#1b2732] px-4 py-3 text-xs text-slate-300 shadow-xl min-[430px]:block sm:right-2">
             <span className="mr-2 text-[#a9c2d5]">TS</span>TypeScript
           </span>
-          <span className="absolute bottom-[5%] left-[8%] rounded-lg border border-white/[0.09] bg-[#1b2732] px-4 py-3 text-xs text-slate-300 shadow-xl">
+          <span className="absolute bottom-[5%] left-[8%] hidden rounded-lg border border-white/[0.09] bg-[#1b2732] px-4 py-3 text-xs text-slate-300 shadow-xl min-[430px]:block">
             <span className="mr-2 text-slate-100">N</span>Next.js
           </span>
         </div>

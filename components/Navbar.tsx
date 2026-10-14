@@ -29,7 +29,7 @@ export default function Navbar() {
           <span>PORTFOLIO<span className="text-[#a9c2d5]">.</span></span>
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -53,7 +53,7 @@ export default function Navbar() {
           aria-expanded={menuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setMenuOpen((open) => !open)}
-          className="flex size-10 flex-col items-center justify-center gap-1.5 rounded-md border border-white/10 text-zinc-200 transition-colors hover:bg-white/[0.06] md:hidden"
+          className="flex size-10 flex-col items-center justify-center gap-1.5 rounded-md border border-white/10 text-zinc-200 transition-colors hover:bg-white/[0.06] lg:hidden"
         >
           <span className={`h-px w-4 bg-current transition-transform ${menuOpen ? "translate-y-[4px] rotate-45" : ""}`} />
           <span className={`h-px w-4 bg-current transition-opacity ${menuOpen ? "opacity-0" : ""}`} />
@@ -62,7 +62,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div id="mobile-navigation" className="border-t border-white/[0.06] px-5 pt-2 md:hidden">
+        <div id="mobile-navigation" className="border-t border-white/[0.06] px-5 pt-2 lg:hidden">
           <div className="mx-auto flex max-w-6xl flex-col">
             {links.map((link) => (
               <Link
