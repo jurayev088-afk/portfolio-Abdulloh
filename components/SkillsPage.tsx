@@ -12,7 +12,7 @@ const skillGroups = [
     title: "UI & Styling",
     description: "Responsive va zamonaviy dizayn",
     icon: Palette,
-    skills: ["Tailwind CSS", "CSS Modules", "Responsive UI", "Ant Design"],
+    skills: ["Tailwind CSS", "CSS Modules", "Responsive UI", "Ant Design", "Meta Data"],
   },
   {
     title: "Data & State",

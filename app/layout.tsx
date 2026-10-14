@@ -13,12 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portfolio-abdulloh-ivory.vercel.app/"),
+
   title: "Abdulloh.dev",
+
   description: "portfolio abdulloh jorayev",
+
+  openGraph: {
+    type: "website",
+    siteName: "Abdulloh.dev",
+    title: "Portfolio - Abdulloh Jo'rayev",
+    description: "portfolio, frontend, react, next",
+    url: "https://portfolio-abdulloh-ivory.vercel.app/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Abdulloh Jo'rayev Portfolio",
+      },
+    ],
+    locale: "uz_UZ",
+  },
 };
-
-
-
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -26,9 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        {children}
-      </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

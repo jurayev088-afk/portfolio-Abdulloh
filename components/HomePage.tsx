@@ -17,6 +17,7 @@ const technologies = [
   "TANSTACK QUERY",
   "REST API",
   "GIT & GITHUB",
+  "META DATA",
   "RESPONSIVE DESIGN",
 ];
 
