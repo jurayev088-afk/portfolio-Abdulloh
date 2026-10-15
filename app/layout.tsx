@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://portfolio-abdulloh-ivory.vercel.app/",
     images: [
       {
-        url: "/og-preview.svg",
+        url: "/og-preview.png",
         width: 1200,
         height: 630,
         alt: "Abdulloh Jo'rayev Portfolio",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Portfolio - Abdulloh Jo'rayev",
     description: "Frontend Developer | React | Next.js",
     images: [
-      "/og-preview.svg",
+      "/og-preview.png",
     ],
   },
 };
